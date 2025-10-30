@@ -1,0 +1,18 @@
+$(document).ready(function() {
+    $('#proxyForm').submit(function(e) {
+        e.preventDefault();
+        var url = $('#url').val();
+        $.ajax({
+            url: 'https://cors-anywhere.herokuapp.com/' + url,
+            method: 'GET',
+            dataType: 'html',
+            success: function(response) {
+                $('#resultContainer').html(response);
+                $('#proxyResult').show();
+            },
+            error: function() {
+                alert('Error occurred while proxying the request.');
+            }
+        });
+    });
+});
