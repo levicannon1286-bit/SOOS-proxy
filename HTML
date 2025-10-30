@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Proxy
+  </title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <meta content="noindex, nofollow" name="robots"/>
+ </head>
+ <body>
+  <!-- Header Section -->
+  <header class="bg-dark text-white text-center p-4">
+   Proxy
+  </header>
+  <!-- Proxy Form -->
+  <section class="container mt-5" id="proxy">
+   <div class="row justify-content-center">
+    <div class="col-md-6">
+     <h2>
+      Enter URL to Proxy
+     </h2>
+     <form id="proxyForm">
+      <div class="form-group">
+       <label for="url">
+        URL:
+       </label>
+       <input class="form-control" id="url" placeholder="https://example.com" required="" type="text"/>
+      </div>
+      <button class="btn btn-primary w-100" type="submit">
+       Proxy Request
+      </button>
+     </form>
+    </div>
+   </div>
+  </section>
+  <!-- Proxy Result -->
+  <section class="container mt-5" id="proxyResult">
+   <div class="row justify-content-center">
+    <div class="col-md-6">
+     <h2>
+      Proxy Result
+     </h2>
+     <div id="resultContainer">
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Bootstrap & jQuery JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+ </body>
+</html>
